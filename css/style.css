@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+	--nav-bg: rgb(71, 212, 255);
+    --default-white: #f5f5f5;
+}
+body {
+    scroll-behavior: smooth;
+}
+/* navigation bar */
+.main-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: var(--nav-bg);
+}
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.brand img {
+	width: 60px;
+}
+.brand span {
+	font-size: 20px;
+	font-weight: bold;
+}
+/* Intro */
+.intro-bg {
+	background-image: url("../assets/images/moon-light-shine-through-window-into-islamic-mosque-interior-min.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+    position: relative;
+}
+.credit {
+    color: var(--default-white);
+    font-size: 13px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
