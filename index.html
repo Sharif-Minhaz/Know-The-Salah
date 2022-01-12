@@ -11,19 +11,29 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <a href="#">
+        <span class="goTop"><i class="fas fa-chevron-up"></i></span>
+    </a>
     <header>
+        <nav class="mid-nav d-none">
+            <div class="start">
+                <span class="out-screen">"পরম করুণাময় অসীম দয়ালু আল্লাহর নামে শুরু করছি।" - </span><span>بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</span>
+            </div>
+        </nav>
         <nav class="main-nav">
             <div class="brand">
                 <img src="./assets/images/logo.png" alt="logo">
                 <span class="text-muted user-select-none">KNOW THE SALAH</span>
             </div>
-            <div class="start">
-                <span>"পরম করুণাময় অসীম দয়ালু আল্লাহর নামে শুরু করছি।"</span> - <span>بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</span>
+            <div class="start start-none">
+                <span>"পরম করুণাময় অসীম দয়ালু আল্লাহর নামে শুরু করছি।" - </span><span>بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</span>
             </div>
             <div class="contribute">
                 <a target="_blank" href="https://github.com/Sharif-Minhaz/Know-The-Salah">
-                    <button class="btn-ex"><i class="fab fa-github"></i>Contribute on github</button>
+                    <button class="btn-ex"><i class="fab fa-github"></i>Contribute <span class="out-screen">on github</span></button>
                 </a>
+                <span title="menu" class="role-button menu-reveal" onclick="changeSidebar(this);"><i class="fas fa-bars"></i></span>
+                <span class="role-button menu-hide d-none" onclick="changeSidebar(this);"><i class="fas fa-times"></i></span>
             </div>
         </nav>
     </header>
@@ -146,6 +156,9 @@
                             <span>‘নিশ্চয় নামাজ অশ্লীল ও মন্দ কর্ম থেকে বিরত রাখে।’</span>
                             <span>(সুরা-২৯ আনকাবুত, আয়াত: ৪৫)</span>
                         </div>
+                        <div class="explore-btn">
+                            <a href="#contact"><button>Explore Now</button></a>
+                        </div>
                     </section>
                     <!-- description -->
                     <section class="description">
@@ -161,5 +174,6 @@
     </footer>
 
     <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
