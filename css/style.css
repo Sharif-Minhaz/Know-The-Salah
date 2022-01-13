@@ -350,7 +350,13 @@ section[id] {
 .full-one-col section:nth-child(2n) .heading h4 {
 	color: var(--section-second-heading);
 }
-
+/* salah faroj */
+.base-list {
+	list-style-type: none;
+}
+.base-list li {
+	padding-bottom: 20px;
+}
 /* responsive part */
 @media (max-width: 1060px) {
 	.container-fluid {
