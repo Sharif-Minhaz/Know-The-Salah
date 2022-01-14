@@ -1,3 +1,16 @@
+let sidebar = document.getElementsByClassName("sidebar")[0];
+// let triggered = docu
+function changeSidebar(e) {
+	e.classList.toggle("d-none");
+	if (e.classList.contains("menu-reveal")) {
+		e.nextElementSibling.classList.toggle("d-none");
+		sidebar.classList.toggle("fade-sidebar")
+	} else {
+		e.previousElementSibling.classList.toggle("d-none");
+		sidebar.classList.toggle("fade-sidebar");
+	}
+}
+
 let toTopbtn = document.getElementsByClassName("goTop")[0];
 
 let pin = document.getElementById("pin");
@@ -18,15 +31,3 @@ window.onscroll = function () {
 	backTotop();
 };
 
-let sidebar = document.getElementsByClassName("sidebar")[0];
-// let triggered = docu
-function changeSidebar(e) {
-	e.classList.toggle("d-none");
-	if (e.classList.contains("menu-reveal")) {
-		e.nextElementSibling.classList.toggle("d-none");
-		sidebar.classList.toggle("fade-sidebar")
-	} else {
-		e.previousElementSibling.classList.toggle("d-none");
-		sidebar.classList.toggle("fade-sidebar");
-	}
-}
