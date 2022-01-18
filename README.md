@@ -1,2 +1,2 @@
 ---
-This is a public repository for knowing salah very well
+This is a website for knowing salah very well in Bangla.
