@@ -52,6 +52,9 @@
 ::-webkit-scrollbar-thumb:hover {
 	background: #bbbbbb;
 }
+hr {
+	background-color: rgb(170, 170, 170);
+}
 body {
 	position: relative;
 	scroll-behavior: smooth;
@@ -197,9 +200,9 @@ header {
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	box-shadow: inset 0 0 0 1px rgb(255 255 255 / 10%),
-	0 2px 6px rgb(0 0 0 / 10%);
+		0 2px 6px rgb(0 0 0 / 10%);
 	-webkit-box-shadow: inset 0 0 0 1px rgb(255 255 255 / 10%),
-	0 2px 6px rgb(0 0 0 / 10%);
+		0 2px 6px rgb(0 0 0 / 10%);
 	text-align: center;
 }
 .goTop-hidden {
@@ -359,20 +362,44 @@ section[id] {
 	padding-bottom: 20px;
 }
 /* next topic */
-.next-btn {
+.topic-next {
 	padding: 20px 20px 40px 20px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	align-items: flex-end;
 }
-.next-btn button {
+.topic-next button,
+.topic-prev button {
 	padding: 8px 13px;
+	color: var(--default-light);
+	background-color: #4ee4fffc;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
+	transition: 0.3s all;
+	-webkit-transition: 0.3s all;
+	-moz-transition: 0.3s all;
+	-ms-transition: 0.3s all;
+	-o-transition: 0.3s all;
+}
+.topic-next button:hover,
+.topic-prev button:hover {
+	color: #f1f1f1;
+}
+/* override for both section */
+.pagination-section {
+	display: flex;
+	justify-content: space-between;
+}
+.topic-prev {
+	padding: 20px 20px 40px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: flex-start;
 }
 /* footer */
 footer {
