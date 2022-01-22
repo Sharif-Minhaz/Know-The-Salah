@@ -24,7 +24,8 @@
 	--section-first-heading: #e4e4e4;
 	--section-second-heading: #dddddded;
 	--footer-color: #ebebeb;
-	--precious-section-color: #F7F0EA;
+	--precious-section-color: #f7f0ea;
+	--report-border: #c9c9c9;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -59,6 +60,9 @@ hr {
 body {
 	position: relative;
 	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
 }
 header {
 	margin-bottom: 65px;
@@ -409,14 +413,29 @@ footer {
 	width: 100%;
 	display: flex;
 	background-color: var(--footer-color);
-	justify-content: center;
-	align-items: center;
+	place-content: center;
 	font-size: 17px;
 	padding: 20px 10px;
+	text-align: center;
 }
-footer span a {
+footer .footer-section {
+	display: flex;
+	row-gap: 10px;
+	column-gap: 6px;
+	flex-wrap: wrap;
+	place-content: center;
+}
+footer .footer-section a {
 	color: #252525;
-	text-decoration: none;
+}
+footer .footer-section a span {
+	border: 1px solid var(--report-border);
+	padding: 4px 11px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
 }
 /* responsive part */
 @media (max-width: 1060px) {
@@ -471,5 +490,13 @@ footer span a {
 	}
 	.out-screen {
 		display: none !important;
+	}
+}
+@media (max-width: 440px) {
+	footer .footer-section {
+		flex-direction: column;
+	}
+	footer div > span:nth-child(3) {
+		display: none;
 	}
 }
