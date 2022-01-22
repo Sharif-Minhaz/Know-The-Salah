@@ -521,6 +521,9 @@ footer .footer-section a span {
 	.main-nav {
 		padding: 10px;
 	}
+	.contribute {
+		gap: 12px;
+	}
 	.heading h4 {
 		font-size: calc(7.25rem - 205%);
 	}
