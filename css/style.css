@@ -442,6 +442,11 @@ footer .footer-section a span {
 	-o-border-radius: 50px;
 }
 /* <-----|-----<>responsive part<>-----|-----> */
+@media (min-width: 1060px){
+	.menu-hide {
+		display: none;
+	}
+}
 @media (max-width: 1060px) {
 	header {
 		margin-bottom: 0px;
