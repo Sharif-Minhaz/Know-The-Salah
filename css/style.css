@@ -290,7 +290,7 @@ header {
 .contribute {
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 20px;
 }
 .menu-reveal,
 .menu-hide {
@@ -492,11 +492,45 @@ footer .footer-section a span {
 		display: none !important;
 	}
 }
+@media (max-width: 520px) {
+	.heading h4 {
+		font-size: 7.25rem;
+	}
+	.heading p {
+		font-size: 2rem;
+	}
+}
+@media (max-width: 480px){
+	.sm-out-screen {
+		display: none;
+	}
+	.contribute button.btn-ex {
+		gap: 0px;
+	}
+	
+}
 @media (max-width: 440px) {
 	footer .footer-section {
 		flex-direction: column;
 	}
 	footer div > span:nth-child(3) {
 		display: none;
+	}
+}
+@media (max-width: 400px){
+	.main-nav {
+		padding: 10px;
+	}
+	.heading h4 {
+		font-size: calc(7.25rem - 205%);
+	}
+	.heading p {
+		font-size: 1.40rem;
+	}
+	.brand {
+		gap: 6px;
+	}
+	.brand span {
+		font-size: 100%;
 	}
 }
