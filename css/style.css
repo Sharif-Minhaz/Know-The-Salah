@@ -83,6 +83,7 @@ header {
 	top: 0;
 	z-index: 999;
 }
+
 .sidebar ul .nav-item .nav-link {
 	color: var(--nav-text);
 	font-size: 15px;
@@ -140,7 +141,7 @@ header {
 	white-space: nowrap;
 	position: relative;
 	display: flex;
-	gap: 8px;
+	gap: 4px;
 	justify-content: center;
 	align-items: center;
 	padding: 8px 14px;
@@ -163,6 +164,9 @@ header {
 	-moz-transform: scale(0.97);
 	-ms-transform: scale(0.97);
 	-o-transform: scale(0.97);
+}
+.btn-ex i {
+	padding-right: 4px;
 }
 .contribute button:hover {
 	border-color: var(--transparent-bg);
@@ -437,8 +441,11 @@ footer .footer-section a span {
 	-ms-border-radius: 50px;
 	-o-border-radius: 50px;
 }
-/* responsive part */
+/* <-----|-----<>responsive part<>-----|-----> */
 @media (max-width: 1060px) {
+	header {
+		margin-bottom: 0px;
+	}
 	.container-fluid {
 		padding-left: 0;
 	}
@@ -469,19 +476,29 @@ footer .footer-section a span {
 		align-items: center;
 		justify-content: center;
 		width: 100%;
-		position: fixed;
-		top: 0;
+		position: relative;
+		top: 0px;
 		height: 40px;
 		background-color: var(--trends-color);
 		color: var(--default-white);
 		z-index: 999;
 	}
 	.main-nav {
+		position: absolute;
 		top: 39px;
 		background-color: var(--default-light);
 	}
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
 	.contribute .menu-reveal {
 		display: block;
+	}
+	.sidebar-move-up {
+		top: 66px;
+		height: 89.2vh;
 	}
 }
 @media (max-width: 574px) {
@@ -500,14 +517,16 @@ footer .footer-section a span {
 		font-size: 2rem;
 	}
 }
-@media (max-width: 480px){
+@media (max-width: 480px) {
 	.sm-out-screen {
 		display: none;
 	}
 	.contribute button.btn-ex {
 		gap: 0px;
 	}
-	
+	.btn-ex i {
+		padding-right: 0px;
+	}
 }
 @media (max-width: 440px) {
 	footer .footer-section {
@@ -517,7 +536,7 @@ footer .footer-section a span {
 		display: none;
 	}
 }
-@media (max-width: 400px){
+@media (max-width: 400px) {
 	.main-nav {
 		padding: 10px;
 	}
@@ -528,7 +547,7 @@ footer .footer-section a span {
 		font-size: calc(7.25rem - 205%);
 	}
 	.heading p {
-		font-size: 1.40rem;
+		font-size: 1.4rem;
 	}
 	.brand {
 		gap: 6px;
